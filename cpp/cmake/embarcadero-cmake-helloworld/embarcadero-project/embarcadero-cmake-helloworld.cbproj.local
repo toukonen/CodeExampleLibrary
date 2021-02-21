@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00.00.00.000.486,C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\embarcadero-project\main.cpp</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.171,=C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.028,=C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.277,C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\embarcadero-project\embarcadero-cmake-helloworldPCH1.h</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.162,C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\embarcadero-project\embarcadero-cmake-helloworld.cbproj</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.487,C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\embarcadero-project\main.dfm</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.486,C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\embarcadero-project\main.h</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.331,=C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00.00.00.000.093,=C:\Users\panu.toukola\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021.02.20 20.56.54.051,=C:\Work\Developing\Training\CodeExampleLibrary\cpp\cmake\embarcadero-cmake-helloworld\standard-cpp-library\HardwareTools\src\HardwareTools.a</Transaction>
+  </Transactions>
+</BorlandProject>
