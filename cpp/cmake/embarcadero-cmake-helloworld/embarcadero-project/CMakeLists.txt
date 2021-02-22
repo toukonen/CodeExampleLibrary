@@ -11,8 +11,9 @@ project (EmbarcaderoAppProject)
 
 include_directories(${HardwareToolsProject_INCLUDE_DIRS})
 
-set_embt_target(VCL DynamicRuntime)
-add_executable (${This} WIN32 main.cpp embarcadero-cmake-helloworld.cpp )
+set_embt_target(VCL)
+
+add_executable (${This} WIN32 main.cpp embarcadero-cmake-helloworld.cpp embarcadero-cmake-helloworld.res )
 install(TARGETS ${This}
             RUNTIME DESTINATION bin
             LIBRARY DESTINATION lib

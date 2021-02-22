@@ -1,10 +1,17 @@
 [
     {
         "name": "Embarcadero - bcc64",
-        "toolchainFile": "C:/Program Files (x86)/Embarcadero/Studio/21.0/cmake/cmake/Windows-Embarcadero.cmake",
+
         "compilers": {
             "C": "bcc64.exe",
             "CXX": "bcc64.exe"
+        },        
+        "cmakeSettings":{
+            "CMAKE_MAKE_PROGRAM": "C:/buildtools/ninja.exe",
+            "DCMAKE_TOOLCHAIN_FILE":"'C:/Program Files (x86)/Embarcadero/Studio/21.0/cmake/Windows-Embarcadero.cmake'"
+        },
+        "preferredGenerator": {
+            "name": "Ninja"
         }
     }
 ]
