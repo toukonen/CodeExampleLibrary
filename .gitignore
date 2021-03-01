@@ -1,6 +1,7 @@
 *.exe
 *.pdi
 *.a
+*.local
 CMakeCache.txt
 cmake-kits.json
 build.ninja
@@ -15,4 +16,5 @@ __history
 googletest-build
 googletest-download
 googletest-src
+
 
