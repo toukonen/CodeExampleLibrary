@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{1D920EEB-4733-439A-B7C9-FE77775D15CD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ExternalLib\ExternalLib.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Tests\ExternalLibTests\ExternalLibTests.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WindowsApplication.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ExternalLib">
+        <MSBuild Projects="ExternalLib\ExternalLib.cbproj"/>
+    </Target>
+    <Target Name="ExternalLib:Clean">
+        <MSBuild Projects="ExternalLib\ExternalLib.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExternalLib:Make">
+        <MSBuild Projects="ExternalLib\ExternalLib.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExternalLibTests">
+        <MSBuild Projects="Tests\ExternalLibTests\ExternalLibTests.cbproj"/>
+    </Target>
+    <Target Name="ExternalLibTests:Clean">
+        <MSBuild Projects="Tests\ExternalLibTests\ExternalLibTests.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExternalLibTests:Make">
+        <MSBuild Projects="Tests\ExternalLibTests\ExternalLibTests.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="WindowsApplication">
+        <MSBuild Projects="WindowsApplication.cbproj"/>
+    </Target>
+    <Target Name="WindowsApplication:Clean">
+        <MSBuild Projects="WindowsApplication.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WindowsApplication:Make">
+        <MSBuild Projects="WindowsApplication.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ExternalLib;ExternalLibTests;WindowsApplication"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ExternalLib:Clean;ExternalLibTests:Clean;WindowsApplication:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ExternalLib:Make;ExternalLibTests:Make;WindowsApplication:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
